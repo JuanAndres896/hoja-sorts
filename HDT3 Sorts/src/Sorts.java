@@ -46,9 +46,10 @@ public class Sorts {
     }
 
 
-    /********************************************************************
+    /***************************************************************************************
     *                   Algoritmo Quicksort
-    ********************************************************************/
+    * Version recursiva, modificado de: http://www.algolist.net/Algorithms/Sorting/Quicksort
+    ****************************************************************************************/
     public void QuickSort(int[] lista, int izq, int der){
         int indice = Particion(lista, izq, der);
         /* Ordenar recursivamente */
