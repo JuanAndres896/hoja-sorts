@@ -2,7 +2,7 @@
  * Universidad del Valle de Guatemala
  * @author Christian Morales, Jose Luis Méndez, Juan García
  * Carne: 15015, 15021, 15046
- * 25 de Julio del 2016
+ * 01 de agosto del 2016
  * Descripción: Esta clase implementa el contrato de la interfaz "Comparable" lo cual servira para el sorting. Esta clase se encarga de dar
  * una lista de 3000 enteros aleatorios.
  */
@@ -33,6 +33,10 @@ public class Estructura implements Comparable{
         for(int i = 0; i<lista.length; i++){
             bw.write(lista[i]+ "\n");
         }
+    }
+    
+    public void setLista(int[] lista){
+        this.lista = lista;
     }
     
     @Override
