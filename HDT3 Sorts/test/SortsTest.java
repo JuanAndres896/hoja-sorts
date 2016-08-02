@@ -42,12 +42,13 @@ public class SortsTest {
     @Test
     public void testParticion() {
         System.out.println("Particion");
-        int[] lista = null;
-        int izq = 0;
-        int der = 0;
+        int[] lista = new int[]{1,6,9,2,3,4};
+        int izq = 1;
+        int der = 3;
         Sorts instance = new Sorts();
-        int expResult = 0;
+        int expResult = 3;
         int result = instance.Particion(lista, izq, der);
+        
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        
@@ -80,29 +81,19 @@ public class SortsTest {
     /**
      * Test of Merge method, of class Sorts.
      */
-    @Test
-    public void testMerge() {
-        System.out.println("Merge");
-        int[] primer = null;
-        int[] segundo = null;
-        int[] resultado = null;
-        Sorts instance = new Sorts();
-        instance.Merge(primer, segundo, resultado);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+   
 
     /**
      * Test of MergeSort method, of class Sorts.
      */
     @Test
     public void testMergeSort() {
+        
         System.out.println("MergeSort");
-        int[] lista = new int[1] ;
-        lista[0]=1;
+        int[] lista = new int[]{1,2,3,9,5,8,135,4,9,7,5};
+       
         Sorts instance = new Sorts();
-        int[] expResult = new int [1];
-        expResult[0] = 1;
+        int[] expResult = new int []{1,2,3,4,5,5,7,8,9,9,135};
         int[] result = instance.MergeSort(lista);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -132,11 +123,12 @@ public class SortsTest {
         System.out.println("RadixSort");
         Estructura datos = null;
         Sorts instance = new Sorts();
-        int[] expResult = null;
+        //int[] expResult = null;
         int[] result = instance.RadixSort(datos);
-        assertArrayEquals(expResult, result);
+        System.out.println(result);
+        //assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
     
 }
