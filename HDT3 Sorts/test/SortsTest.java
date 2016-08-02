@@ -98,13 +98,15 @@ public class SortsTest {
     @Test
     public void testMergeSort() {
         System.out.println("MergeSort");
-        int[] lista = null;
+        int[] lista = new int[1] ;
+        lista[0]=1;
         Sorts instance = new Sorts();
-        int[] expResult = null;
+        int[] expResult = new int [1];
+        expResult[0] = 1;
         int[] result = instance.MergeSort(lista);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
