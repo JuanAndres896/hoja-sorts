@@ -143,10 +143,29 @@ public class Sorts {
      /********************************************************************
     *                   Algoritmo RadixSort
     ********************************************************************/
-    /*public int[] RadixSort(Estructura datos){
+    public int[] RadixSort(Estructura datos){
         int[] lista = datos.lista;
+        int i, m = lista[0], exp = 1, n = lista.length;
+        int[] b = new int[lista.length];
+        for (i = 1; i < n; i++)
+            if (lista[i] > m)
+                m = lista[i];
+        while (m / exp > 0)
+        {
+            int[] bucket = new int[lista.length];
+ 
+            for (i = 0; i < n; i++)
+                bucket[(lista[i] / exp) % 10]++;
+            for (i = 1; i < 10; i++)
+                bucket[i] += bucket[i - 1];
+            for (i = n - 1; i >= 0; i--)
+                b[--bucket[(lista[i] / exp) % 10]] = lista[i];
+            for (i = 0; i < n; i++)
+                lista[i] = b[i];
+            exp *= 10;        
+        }
         return lista;
-    }*/
+    }
     
     
 }
