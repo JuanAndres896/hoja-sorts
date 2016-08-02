@@ -4,10 +4,6 @@
  * and open the template in the editor.
  */
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -107,39 +103,12 @@ public class SortsTest {
     /**
      * Test of GnomeSort method, of class Sorts.
      */
-    @Test
-    public void testGnomeSort() {
-        System.out.println("GnomeSort");
-        Estructura datos = null;
-        Sorts instance = new Sorts();
-        int[] expResult = null;
-        int[] result = instance.GnomeSort(datos);
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
 
     /**
      * Test of RadixSort method, of class Sorts.
+     * @throws java.io.IOException
      */
-    @Test
-    public void testRadixSort() throws IOException {
-        System.out.println("RadixSort");
-        Estructura datos = new Estructura();
-        
-        Sorts instance = new Sorts();
-        //int[] expResult = null;
-        int[] result = instance.RadixSort(datos);
-        System.out.println(result);
-        //assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-       
     
-
-
- 
-    }
-    public void dataUnit(){
-         int[] lista;
-    }
+   
 }
