@@ -59,15 +59,22 @@ public class SortsTest {
     @Test
     public void testQuickSort() {
         System.out.println("QuickSort");
-        int[] lista = null;
+        int[] lista = new int[3];
+        lista[0] = 1;
+        lista[1] = 2;
+        lista[2] = 3;
         int izq = 0;
         int der = 0;
         Sorts instance = new Sorts();
-        int[] expResult = null;
+        int[] expResult = new int[3];
+        expResult[0]=1;
+        expResult[1]=2; 
+        expResult[2]=3;
+         
         int[] result = instance.QuickSort(lista, izq, der);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
