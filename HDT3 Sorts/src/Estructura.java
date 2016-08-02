@@ -27,7 +27,7 @@ public class Estructura implements Comparable{
         for(int i = 0; i<lista.length; i++){
             lista[i] = (int) (rnd.nextDouble() * 100000.0 + 0.0);
         }
-        String ruta = "C:\\Users\\JuanAndrés\\Desktop\\Segundo Año\\CICLO 2\\Estructuras de Datos\\Hoja 3\\hoja-sorts\\HDT3 Sorts\\src\\random.txt";
+        String ruta = "D:\\documentos\\NetBeansProjects\\hoja-sorts\\random.txt";
         File archivo = new File(ruta);
         BufferedWriter bw = new BufferedWriter(new FileWriter(archivo));
         for(int i = 0; i<lista.length; i++){
