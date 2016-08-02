@@ -4,6 +4,10 @@
  * and open the template in the editor.
  */
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -119,9 +123,10 @@ public class SortsTest {
      * Test of RadixSort method, of class Sorts.
      */
     @Test
-    public void testRadixSort() {
+    public void testRadixSort() throws IOException {
         System.out.println("RadixSort");
-        Estructura datos = null;
+        Estructura datos = new Estructura();
+        
         Sorts instance = new Sorts();
         //int[] expResult = null;
         int[] result = instance.RadixSort(datos);
@@ -129,6 +134,12 @@ public class SortsTest {
         //assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        
-    }
     
+
+
+ 
+    }
+    public void dataUnit(){
+         int[] lista;
+    }
 }
